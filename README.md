@@ -3,13 +3,15 @@ Tableau and Pandas
 
 ## Overview of the analysis: Explain the purpose of this analysis.
 
-The Purpose of this project was to gain familiarity with Tableau, a data vizualization software. learn how to import, style, and portray data accurately. Then, you'll create worksheets, dashboards, and stories to visualize key data from a New York Citi Bike dataset.
+The Purpose of this project was to gain familiarity with Tableau, a data vizualization software. This required that I learn how to import, style, and portray data accurately via the Tableau platform. I then created worksheets, dashboards, and a story to visualize key data from a New York Citi Bike dataset.  The data set consisted of aproximately 2.34 million rows of data, including multiple column, such as: Bike Id, User info, start and stop locations, and bike usage.  The data visualizations were then used by a friend, who is interested in starting a similar company in Des Moines, Iowa. 
 
-# 1. Create a DataFrame for the 201908-citibike-tripdata data.
-# 2. Check the datatypes of your columns. 
-# 3. Convert the 'tripduration' column to datetime datatype.
-# 4. Check the datatypes of your columns.
-# 5. Export the Dataframe as a new CSV file without the index.
+I used Jupyter Notebooks and pandas to process the large data file.  Processing included the following steps:
+
+1) Create a DataFrame for the 201908-citibike-tripdata data
+2) Check the datatypes of the columns
+3) Convert the 'tripduration' column to datetime datatype
+4) Verify the the datatype of my new column ("Trip Duration")
+5) Export the Dataframe as a new CSV file without the index
 
 The updated CSV data file was then loaded into Tableau and the following vizualizations were created, which were then used to create dashboards and a story:
 * Checkout times for all users
@@ -20,14 +22,21 @@ The updated CSV data file was then loaded into Tableau and the following vizuali
 * August Peak hours
 * Start and End location
 
-The graphs above included multi plot line graphs, heat maps, horizontal bar graph, and maps with pop-up info and markers.
+The graphs above included multi-plot line graphs, heat maps, horizontal bar graph, and maps with pop-up info and markers.
 
 
 ## Results: Using the visualizations you have in your Tableau Story, describe the results of each visualization underneath the image.
-## Summary: Provide a high-level summary of the results and two additional visualizations that you would perform with the given dataset.
 
 
-![This is an image]()
+
+<br><br>![This is an image](https://github.com/bartblack13/NYC-CitiBike-Bike-Share/blob/main/Resources/Checkout%20times.png)<br>**Figure 1 - Bikes are rented for a maximum of 5hrs, regardless of Gender, with about 3,000 bikes being rented for aproximately 5hrs. Males rent more bikes than females, and unknown, totalling ~2,100 bikes for around 5hrs; ~750 bikes for around 6hrs; and ~60 bikes, between 4-6hrs, respectively.**
+
+<br><br>![This is an image](https://github.com/bartblack13/NYC-CitiBike-Bike-Share/blob/main/Resources/Usage%20by%20User%20type.png)<br>**Figure 2 - Thursday, between 5-6pm is the most busy time for bike rentals, with aproximately 44-45K bike rentals, almost doubles any time block on Saturday between 10am and6pm. Evenings are popular all days except Sudnay and wednesday.  Again, Males users (specifically those on subscription plans) comprise the majority of this usage and follow the same pattern mentioned above. Subscribers use the bikes more than non-subscripbers, suggesting the bikes are used heavily by commuters.**
+
 
 Link to NYC CitiBike Challenge story on my Tableau Public page can be found [here](https://public.tableau.com/app/profile/bart.black/viz/NYCCitiBikeChallengeDUDataAnalyticsBootcamp/Story1
 ).
+
+## Summary: Provide a high-level summary of the results and two additional visualizations that you would perform with the given dataset.
+<br><br>![This is an image](https://github.com/bartblack13/NYC-CitiBike-Bike-Share/blob/main/Resources/August%20Peak%20times.png)<br>**Figure 3 - Peak usage for the month of August is between 5-6pm, with combined monthly usage at ~440K rentals for that time window.**
+<br><br>![This is an image](https://github.com/bartblack13/NYC-CitiBike-Bike-Share/blob/main/Resources/start%20stop%20locations.png)<br>**Figure 4 - Start and End locations, where color and size of circular maker indicate volume of rentals.  Start and end  locations are extremely similar.  The most popular spot (Dark red), located in the center of the map is across the street from Grand Central Terminal, 2 blocks east of the NY Public Library, and several blocks north east of the Empire States Building.**
